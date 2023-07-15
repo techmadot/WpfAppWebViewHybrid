@@ -1,0 +1,16 @@
+﻿@using Microsoft.AspNetCore.Components.Web
+
+<h3>Hello,WPFApplication</h3>
+
+<p>@Message</p>
+<button @onclick="OnClicked">Click button</button>
+
+
+@code {
+	private string Message = "Hello,hybrid world";
+
+	private void OnClicked()
+	{
+		Message = "ボタンが押されました。";
+	}
+}
